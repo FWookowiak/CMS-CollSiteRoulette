@@ -50,3 +50,106 @@
 #csr-link[hidden] {
     display: none;
 }
+/*Konto użytkownika*/
+
+.entry-content h2,
+.wp-block-post-content h2 {
+    color: #0b5d1e;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.entry-content form,
+.wp-block-post-content form {
+    max-width: 560px;
+    margin: 1.5rem 0 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e3e6e3;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Odstępy pomiędzy polami */
+.entry-content form p,
+.wp-block-post-content form p {
+    margin: 0 0 1.2rem;
+}
+
+.entry-content form label,
+.wp-block-post-content form label {
+    display: block;
+    color: #263328;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.entry-content form input[type="text"],
+.entry-content form input[type="email"],
+.entry-content form input[type="password"],
+.wp-block-post-content form input[type="text"],
+.wp-block-post-content form input[type="email"],
+.wp-block-post-content form input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 46px;
+    margin-top: 0.5rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid #cbd5cb;
+    border-radius: 8px;
+    background: #fff;
+    color: #172117;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.entry-content form input:focus,
+.wp-block-post-content form input:focus {
+    outline: none;
+    border-color: #0b5d1e;
+    box-shadow: 0 0 0 3px rgba(11, 93, 30, 0.12);
+}
+
+.entry-content form button[type="submit"],
+.wp-block-post-content form button[type="submit"] {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: #0b5d1e;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.entry-content form button[type="submit"]:hover,
+.wp-block-post-content form button[type="submit"]:hover {
+    background: #084516;
+    transform: translateY(-1px);
+}
+
+.entry-content a,
+.wp-block-post-content a {
+    text-underline-offset: 3px;
+}
+
+.csr-message-success {
+    padding: 0.9rem 1rem;
+    border: 1px solid #a7d8ae;
+    border-radius: 8px;
+    background: #effaf0;
+    color: #145523;
+}
+
+.csr-message-error {
+    padding: 0.9rem 1rem;
+    border: 1px solid #e5b6b6;
+    border-radius: 8px;
+    background: #fff2f2;
+    color: #8b2020;
+}
