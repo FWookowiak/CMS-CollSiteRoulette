@@ -1,0 +1,52 @@
+.csr-roulette {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background: #0b5d1e;
+    border: 4px solid #c9a227;
+    border-radius: 16px;
+    color: #fff;
+}
+
+#csr-category {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+#csr-display {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    min-height: 1.5em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: #000;
+    border-radius: 8px;
+}
+
+#csr-spin {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #c9a227;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+}
+
+#csr-spin:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+#csr-link {
+    display: block;
+    margin-top: 1.2rem;
+    color: #ffd84d;
+    font-weight: bold;
+}
+
+#csr-link[hidden] {
+    display: none;
+}
