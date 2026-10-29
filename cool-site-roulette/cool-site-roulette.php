@@ -145,6 +145,7 @@ function csr_shortcode() {
     <?php
     return ob_get_clean();
 }
+add_shortcode( 'ruletka', 'csr_shortcode' );
 /**
  * Formularz konta: rejestracja, logowanie i wylogowanie.
  */
@@ -350,7 +351,15 @@ function csr_account_shortcode() {
 
 	<form method="post">
     		<?php wp_nonce_field( 'csr_account_action', 'csr_account_nonce' ); ?>
-
+            <p>
+                            <label>
+                                Nazwa wyświetlana<br>
+                                <input type="text"
+                                    name="csr_display_name"
+                                    value="<?php echo esc_attr( $user->display_name ); ?>"
+                                    required>
+                            </label>
+                        </p>
     		<p>
         		<label>
            			 Adres e-mail<br>
